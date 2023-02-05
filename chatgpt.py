@@ -4,7 +4,6 @@ import openai
 import streamlit as st
 import pandas as pd
 from datetime import datetime, timedelta
-import cv2
 
 def generate_text(prompt):
     # 모델 엔진 선택
@@ -72,11 +71,6 @@ Create several hashtags and add them only at the end of the line.
 Add a summary of the entire article at the beginning of the blog post.'''
 
 with st.sidebar:
-    image = cv2.imread("Earth_2.jpg",cv2.IMREAD_UNCHANGED)
-
-    cv2.imshow("Universe",image)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
 #     st.markdown('''
 # **API KEY 발급 방법**
 # 1. https://beta.openai.com/ 회원가입
