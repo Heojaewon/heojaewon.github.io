@@ -133,9 +133,9 @@ with tab_single:
     prompt_container.markdown('[tip 1] [구글 번역기] (https://translate.google.com/)')
     prompt_container.markdown('[tip 2] `<<TOPIC>>`은 입력한 주제로 `<<CATEGORY>>`는 입력한 카테고리로 **치환**.')
     # prompt_container.markdown('(예시)')
-    prompt_container.markdown(f'''
-    ```
-    {prompt_example}''')
+    # 예시 필드 prompt_container.markdown(f'''
+    # ```
+    # {prompt_example}''')
 
     prompt = prompt_container.text_area(label='세부지침 입력', 
                                         placeholder='지침을 입력해 주세요',  
@@ -196,7 +196,7 @@ with tab_multiple:
 
             yesterday = datetime.now() - timedelta(days=1)
             timestring = yesterday.strftime('%Y-%m-%d')
-            zip_filename = f'{timestring}-blog-files.zip'
+            zip_filename = f'{timestring}-files.zip'
             with zipfile.ZipFile(zip_filename, 'w') as myzip:
                 for f in blog_files:
                     myzip.write(f)
