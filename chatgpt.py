@@ -61,14 +61,14 @@ author_profile: false
 ---'''
     return page_head
 
-prompt_example = f'''Write blog posts in markdown format.
-Write the theme of your blog as "<<TOPIC>>" and its category is "<<CATEGORY>>".
-Highlight, bold, or italicize important words or sentences.
-Please include the restaurant's address, menu recommendations and other helpful information(opening and closing hours) as a list style.
-Please make the entire blog less than 10 minutes long.
-The audience of this article is 20-40 years old.
-Create several hashtags and add them only at the end of the line.
-Add a summary of the entire article at the beginning of the blog post.'''
+# prompt_example = f'''Write blog posts in markdown format.
+# Write the theme of your blog as "<<TOPIC>>" and its category is "<<CATEGORY>>".
+# Highlight, bold, or italicize important words or sentences.
+# Please include the restaurant's address, menu recommendations and other helpful information(opening and closing hours) as a list style.
+# Please make the entire blog less than 10 minutes long.
+# The audience of this article is 20-40 years old.
+# Create several hashtags and add them only at the end of the line.
+# Add a summary of the entire article at the beginning of the blog post.'''
 
 with st.sidebar:
 #     st.markdown('''
