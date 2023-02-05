@@ -130,8 +130,8 @@ with tab_single:
     # Prompt Container
     prompt_container = st.container()
     prompt_container.subheader('2. 세부지침')
-    prompt_container.markdown('[tip 1] **세부지침**은 [구글 번역기](https://translate.google.com/)로 돌려서 **영어로** 입력해 주세요')
-    prompt_container.markdown('[tip 2] `<<TOPIC>>`은 입력한 주제로 `<<CATEGORY>>`는 입력한 카테고리로 **치환**됩니다.')
+    prompt_container.markdown('[tip 1] [구글 번역기] (https://translate.google.com/)')
+    prompt_container.markdown('[tip 2] `<<TOPIC>>`은 입력한 주제로 `<<CATEGORY>>`는 입력한 카테고리로 **치환**.')
     # prompt_container.markdown('(예시)')
     prompt_container.markdown(f'''
     ```
