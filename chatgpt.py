@@ -135,7 +135,7 @@ with tab_single:
     # prompt_container.markdown('(예시)')
     prompt_container.markdown(f'''
     ```
-    {prompt_example}''')
+    # {prompt_example}''')
 
     prompt = prompt_container.text_area(label='세부지침 입력', 
                                         placeholder='지침을 입력해 주세요',  
