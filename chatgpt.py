@@ -129,7 +129,7 @@ def generate_blog(apikey, topic, category, prompt):
 with tab_single:
     # Prompt Container
     prompt_container = st.container()
-    prompt_container.subheader('2. 세부지침')
+    prompt_container.subheader('2. 작성 글')
     prompt_container.markdown('[tip 1] [구글 번역기] (https://translate.google.com/)')
     prompt_container.markdown('[tip 2] `<<TOPIC>>`은 입력한 주제로 `<<CATEGORY>>`는 입력한 카테고리로 **치환**.')
     # prompt_container.markdown('(예시)')
@@ -137,8 +137,8 @@ with tab_single:
     # ```
     # {prompt_example}''')
 
-    prompt = prompt_container.text_area(label='세부지침 입력', 
-                                        placeholder='지침을 입력해 주세요',  
+    prompt = prompt_container.text_area(label='입력',
+                                        placeholder='입력해 주세요',
                                         key='prompt1',
                                         height=250)
 
