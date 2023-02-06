@@ -120,7 +120,8 @@ def generate_blog(apikey, topic, category, prompt):
 
     yesterday = datetime.now() - timedelta(days=1)
     timestring = yesterday.strftime('%Y-%m-%d')
-    filename = f"{timestring}-{'-'.join(topic.lower().split())}.md"
+    filename = f"{timestring}-{'-'.join(topic.lower().split())}.txt"
+    # filename = f"{timestring}-{'-'.join(topic.lower().split())}.md"
     with open(filename, 'w') as f:
         f.write(output)
         f.close()
