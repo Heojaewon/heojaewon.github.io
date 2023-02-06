@@ -93,7 +93,7 @@ with st.sidebar:
 
     value=''
 
-    Test_Api_Key_1 = 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
+    Test_Api_Key_1 = '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'
 
     option = st.selectbox(
         'How would you like to be contacted?',
