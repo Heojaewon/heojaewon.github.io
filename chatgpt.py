@@ -88,7 +88,7 @@ with st.sidebar:
         '''
     )
     st.write("# Hello! 👋")
-    st.header('OPEN AI')
+    st.header('[OPEN AI](https://beta.openai.com/account/api-keys)')
 
     value=''
     apikey = st.text_input(label='OPENAI API KEY', placeholder='OPENAI API KEY를 입력해 주세요', value=value)
