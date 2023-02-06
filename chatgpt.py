@@ -93,7 +93,7 @@ with st.sidebar:
 
 
     value=''
-    apikey = st.text_input(label='OPENAI API KEY', placeholder='OPENAI API KEY를 입력해 주세요', value=value)
+    apikey = st.text_input(label='OPENAI API KEY', placeholder='OPENAI API KEY 입력', value=value)
 
     if apikey:
         st.markdown(f'OPENAI API KEY: `{apikey}`')
@@ -103,7 +103,9 @@ with st.sidebar:
 # Preset Container
 preset_container = st.container()
 preset_container.subheader('1. 설정')
-tab_single, tab_multiple = preset_container.tabs(['1개 생성', '여러개 생성'])
+# tab_single, tab_multiple = preset_container.tabs(['1개 생성', '여러개 생성'])
+tab_single = preset_container.tabs(['1개 생성'])
+
 
 col1, co12 =  tab_single.columns(2)
 
