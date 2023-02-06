@@ -79,7 +79,7 @@ with st.sidebar:
         </div>
         '''
     )
-    
+    st.write("# Hello! 👋")
     st.markdown('''
 **API KEY 발급 방법**
 1. https://beta.openai.com/ 회원가입
@@ -87,16 +87,24 @@ with st.sidebar:
 3. `create new secret key` 클릭 후 생성된 KEY 복사
     ''')
 
-    st.write("# Hello! 👋")
     st.header('🔗 [OPEN AI](https://beta.openai.com/account/api-keys)')
 
 
 
     value=''
-    apikey = st.text_input(label='OPENAI API KEY', placeholder='OPENAI API KEY 입력', value=value)
+
+    option = st.selectbox(
+        'How would you like to be contacted?',
+        ('Email', 'Home phone', 'Mobile phone'))
+
+    st.write('You selected:', option)
+
+    apikey = st.text_input(label='OPENAI API KEY', placeholder='OPENAI API KEY 입력', value=option)
 
     if apikey:
         st.markdown(f'OPENAI API KEY: `{apikey}`')
+
+
 
     st.markdown('---')
 
