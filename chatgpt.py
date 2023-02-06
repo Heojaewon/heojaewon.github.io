@@ -82,7 +82,9 @@ with st.sidebar:
 
     components.html(
         '''
-        <img src="https://i0.wp.com/www.ifthen.ai/wp-content/uploads/2019/02/20561EC6-9ABF-4818-A035-FD1B583079F4.png" width="200px">
+        <div style="text-align:center;">
+            <img src="https://i0.wp.com/www.ifthen.ai/wp-content/uploads/2019/02/20561EC6-9ABF-4818-A035-FD1B583079F4.png" width="50%">
+        </div>
         '''
     )
 
