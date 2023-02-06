@@ -72,14 +72,6 @@ Create several hashtags and add them only at the end of the line.
 Add a summary of the entire article at the beginning of the blog post.'''
 
 with st.sidebar:
-    st.markdown('''
-**API KEY 발급 방법**
-1. https://beta.openai.com/ 회원가입
-2. https://beta.openai.com/account/api-keys 접속
-3. `create new secret key` 클릭 후 생성된 KEY 복사
-    ''')
-
-
     components.html(
         '''
         <div style="text-align:center;">
@@ -87,6 +79,14 @@ with st.sidebar:
         </div>
         '''
     )
+    
+    st.markdown('''
+**API KEY 발급 방법**
+1. https://beta.openai.com/ 회원가입
+2. https://beta.openai.com/account/api-keys 접속
+3. `create new secret key` 클릭 후 생성된 KEY 복사
+    ''')
+
     st.write("# Hello! 👋")
     st.header('🔗 [OPEN AI](https://beta.openai.com/account/api-keys)')
 
