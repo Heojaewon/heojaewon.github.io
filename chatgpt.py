@@ -93,15 +93,7 @@ with st.sidebar:
 
     value=''
 
-    Test_Api_Key_1 = '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'
-
-    option = st.selectbox(
-        'How would you like to be contacted?',
-        (Test_Api_Key_1, 'pre2', 'pre3'))
-
-    st.write('You selected:', option)
-
-    apikey = st.text_input(label='OPENAI API KEY', placeholder='OPENAI API KEY 입력', value=option)
+    apikey = st.text_input(label='OPENAI API KEY', placeholder='OPENAI API KEY 입력', value=value)
 
     if apikey:
         st.markdown(f'OPENAI API KEY: `{apikey}`')
