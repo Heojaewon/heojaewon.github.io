@@ -90,6 +90,8 @@ with st.sidebar:
     st.write("# Hello! 👋")
     st.header('🔗 [OPEN AI](https://beta.openai.com/account/api-keys)')
 
+
+
     value=''
     apikey = st.text_input(label='OPENAI API KEY', placeholder='OPENAI API KEY를 입력해 주세요', value=value)
 
@@ -163,7 +165,7 @@ with tab_single:
 
         prompt_container.markdown(f'```{prompt_output}')
 
-    # 블로그 생성
+    # 생성
     if apikey and topic and category and prompt:
         button = prompt_container.button('생성하기')
 
