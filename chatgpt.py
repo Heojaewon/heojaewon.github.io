@@ -103,8 +103,7 @@ with st.sidebar:
 # Preset Container
 preset_container = st.container()
 preset_container.subheader('1. 설정')
-# tab_single, tab_multiple = preset_container.tabs(['1개 생성', '여러개 생성'])
-tab_single = preset_container.tabs(['1개 생성'])
+tab_single, tab_multiple = preset_container.tabs(['1개 생성', '여러개 생성'])
 
 
 col1, co12 =  tab_single.columns(2)
@@ -149,8 +148,8 @@ with tab_single:
     prompt_container = st.container()
     prompt_container.markdown('''\n''')
     prompt_container.subheader('2. 작성 글')
-    prompt_container.markdown('[tip 1] [구글 번역기] (https://translate.google.com/)')
-    prompt_container.markdown('[tip 2] `<<TOPIC>>`은 입력한 주제로 `<<CATEGORY>>`는 입력한 카테고리로 **치환**.')
+    prompt_container.markdown('[1] [구글 번역기] (https://translate.google.com/)')
+    prompt_container.markdown('[2] `<<TOPIC>>`은 입력한 주제로 `<<CATEGORY>>`는 입력한 카테고리로 **치환**.')
     # prompt_container.markdown('(예시)')
     # 예시 필드 prompt_container.markdown(f'''
     # ```
