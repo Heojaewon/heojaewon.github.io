@@ -13,12 +13,12 @@ def generate_text(prompt):
     # 맥스 토큰
     max_tokens = 3500
 
-    # 블로그 생성
+    # 생성
     completion = openai.Completion.create(
         engine=model_engine,
         prompt=prompt,
         max_tokens=max_tokens,
-        temperature=0.3,      # creativity
+        temperature=0.5,      # creativity
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0
@@ -51,7 +51,7 @@ def make_prompt(prompt, topic='<<TOPIC>>', category='<<CATEGORY>>'):
     return prompt
 
 def make_header(topic, category, tags):
-    # 블로그 헤더
+    # 헤더
     page_head = f'''---
 layout: single
 title:  "{topic}"
@@ -62,7 +62,7 @@ author_profile: false
 ---'''
     return page_head
 
-prompt_example = f'''Write blog posts in markdown format.
+prompt_example = f'''Write posts in markdown format.
 Write the theme of your blog as "<<TOPIC>>" and its category is "<<CATEGORY>>".
 Highlight, bold, or italicize important words or sentences.
 Please include the restaurant's address, menu recommendations and other helpful information(opening and closing hours) as a list style.
