@@ -72,12 +72,12 @@ Create several hashtags and add them only at the end of the line.
 Add a summary of the entire article at the beginning of the blog post.'''
 
 with st.sidebar:
-#     st.markdown('''
-# **API KEY 발급 방법**
-# 1. https://beta.openai.com/ 회원가입
-# 2. https://beta.openai.com/account/api-keys 접속
-# 3. `create new secret key` 클릭 후 생성된 KEY 복사
-#     ''')
+    st.markdown('''
+**API KEY 발급 방법**
+1. https://beta.openai.com/ 회원가입
+2. https://beta.openai.com/account/api-keys 접속
+3. `create new secret key` 클릭 후 생성된 KEY 복사
+    ''')
 
 
     components.html(
@@ -150,10 +150,10 @@ with tab_single:
     prompt_container.subheader('2. 작성 글')
     prompt_container.markdown('[1] [구글 번역기] (https://translate.google.com/)')
     prompt_container.markdown('[2] `<<TOPIC>>`은 입력한 주제로 `<<CATEGORY>>`는 입력한 카테고리로 **치환**.')
-    # prompt_container.markdown('(예시)')
-    # 예시 필드 prompt_container.markdown(f'''
-    # ```
-    # {prompt_example}''')
+    prompt_container.markdown('(예시)')
+    prompt_container.markdown(f'''
+    ```
+    {prompt_example}''')
 
     prompt = prompt_container.text_area(label='입력',
                                         placeholder='입력해 주세요',
@@ -187,8 +187,8 @@ with tab_multiple:
         # Prompt Container
         prompt_container2 = st.container()
         prompt_container2.subheader('2. 세부지침')
-        prompt_container2.markdown('[tip 1] **세부지침**은 [구글 번역기](https://translate.google.com/)로 돌려서 **영어로** 입력해 주세요')
-        prompt_container2.markdown('[tip 2] `<<TOPIC>>`은 입력한 주제로 `<<CATEGORY>>`는 입력한 카테고리로 **치환**됩니다.')
+        prompt_container2.markdown('[1] **세부지침**은 [구글 번역기](https://translate.google.com/)로 돌려서 **영어로** 입력해 주세요')
+        prompt_container2.markdown('[2] `<<TOPIC>>`은 입력한 주제로 `<<CATEGORY>>`는 입력한 카테고리로 **치환**됩니다.')
         prompt_container2.markdown('(예시)')
         prompt_container2.markdown(f'''
         ```
