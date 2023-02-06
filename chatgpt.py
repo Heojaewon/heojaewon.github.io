@@ -79,7 +79,7 @@ with st.sidebar:
         </div>
         '''
     )
-    st.write("# Hello! 👋")
+    st.header("# Hello! 👋")
     st.markdown('''
 **API KEY 발급 방법**
 1. https://beta.openai.com/ 회원가입
@@ -88,8 +88,6 @@ with st.sidebar:
     ''')
 
     st.header('🔗 [OPEN AI](https://beta.openai.com/account/api-keys)')
-
-
 
     value=''
 
