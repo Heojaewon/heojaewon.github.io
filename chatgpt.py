@@ -79,15 +79,13 @@ with st.sidebar:
         </div>
         '''
     )
-    st.header("# Hello! 👋")
+    st.header("Hello! 👋")
     st.markdown('''
 **API KEY 발급 방법**
 1. https://beta.openai.com/ 회원가입
 2. https://beta.openai.com/account/api-keys 접속
 3. `create new secret key` 클릭 후 생성된 KEY 복사
     ''')
-
-    st.header('🔗 [OPEN AI](https://beta.openai.com/account/api-keys)')
 
     value=''
 
