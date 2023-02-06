@@ -115,8 +115,7 @@ with st.sidebar:
             </div>
           </div>
         </div>
-        """,
-        height=auto,
+        """
     )
 
     st.header('OPEN AI')
