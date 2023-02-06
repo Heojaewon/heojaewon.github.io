@@ -87,14 +87,14 @@ with st.sidebar:
 3. `create new secret key` 클릭 후 생성된 KEY 복사
     ''')
 
+    st.markdown('---')
+
     value=''
 
     apikey = st.text_input(label='OPENAI API KEY', placeholder='OPENAI API KEY 입력', value=value)
 
     if apikey:
         st.markdown(f'OPENAI API KEY: `{apikey}`')
-
-
 
     st.markdown('---')
 
