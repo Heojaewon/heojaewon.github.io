@@ -78,7 +78,7 @@ with st.sidebar:
 # 2. https://beta.openai.com/account/api-keys 접속
 # 3. `create new secret key` 클릭 후 생성된 KEY 복사
 #     ''')
-    st.write("# Hello! 👋")
+
 
     components.html(
         '''
@@ -87,7 +87,7 @@ with st.sidebar:
         </div>
         '''
     )
-
+    st.write("# Hello! 👋")
     st.header('OPEN AI')
 
     value=''
