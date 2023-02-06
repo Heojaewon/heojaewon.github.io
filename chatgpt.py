@@ -130,7 +130,7 @@ def generate_blog(apikey, topic, category, prompt):
 with tab_single:
     # Prompt Container
     prompt_container = st.container()
-    prompt_container.markdown('f'''
+    prompt_container.markdown(f'''
                               '''
                               ''')
     prompt_container.subheader('2. 작성 글')
