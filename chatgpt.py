@@ -62,13 +62,13 @@ author_profile: false
 ---'''
     return page_head
 
-prompt_example = f'''Write posts in markdown format.
+prompt_example = f'''Write a long blog articles in markdown format.
 Write the theme of your blog as "<<TOPIC>>" and its category is "<<CATEGORY>>".
 Highlight, bold, or italicize important words or sentences.
 Please include the restaurant's address, menu recommendations and other helpful information(opening and closing hours) as a list style.
 Please make the entire blog less than 10 minutes long.
 The audience of this article is 20-40 years old.
-Create several hashtags and add them only at the end of the line.
+Create hashtags by separating them with multiple commas and append them only to the end of the line.
 Add a summary of the entire article at the beginning of the blog post.'''
 
 with st.sidebar:
@@ -203,7 +203,7 @@ with tab_multiple:
 
         if button2:
             generate_progress = st.progress(0)            
-            st.write(f"[알림] 총{total} 개의 블로그를 생성합니다!")
+            st.write(f"[알림] 총{total} 개의 글을 생성합니다!")
             blog_files = []
             for i, row in df.iterrows():
                 filename = generate_blog(apikey=apikey, topic=row['topic'], category=row['category'], prompt=prompt2)
