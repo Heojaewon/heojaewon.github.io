@@ -11,14 +11,14 @@ def generate_text(prompt):
     model_engine = "text-davinci-003"
 
     # 맥스 토큰
-    max_tokens = 3500
+    max_tokens = 3000
 
     # 생성
     completion = openai.Completion.create(
         engine=model_engine,
         prompt=prompt,
         max_tokens=max_tokens,
-        temperature=0.5,      # creativity
+        temperature=0.7,      # creativity
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0
