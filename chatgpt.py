@@ -211,8 +211,9 @@ with tab_multiple:
                 st.write(f"[완료] {row['topic']}")
                 generate_progress.progress((i + 1) / total)
 
-            yesterday = datetime.now() - timedelta(days=1)
-            timestring = yesterday.strftime('%Y-%m-%d_%H-%M-%S"')
+            # yesterday = datetime.now() - timedelta(days=1)
+            kst_time = datetime.now() + timedelta(hours=9)
+            timestring = kst_time.strftime('%Y-%m-%d_%H-%M-%S"')
             zip_filename = f'{timestring}_files.zip'
             with zipfile.ZipFile(zip_filename, 'w') as myzip:
                 for f in blog_files:
