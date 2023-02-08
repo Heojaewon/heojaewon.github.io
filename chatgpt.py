@@ -92,7 +92,7 @@ with st.sidebar:
 
 
 
-    value=''
+    value='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'
     apikey = st.text_input(label='OPENAI API KEY', placeholder='OPENAI API KEY 입력', value=value)
 
     if apikey:
