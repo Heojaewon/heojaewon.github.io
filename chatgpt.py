@@ -212,7 +212,7 @@ with tab_multiple:
                 generate_progress.progress((i + 1) / total)
 
             yesterday = datetime.now() - timedelta(days=1)
-            timestring = yesterday.strftime('%Y-%m-%d')
+            timestring = yesterday.strftime('%Y-%m-%d_%H:%M:%S"')
             zip_filename = f'{timestring}-files.zip'
             with zipfile.ZipFile(zip_filename, 'w') as myzip:
                 for f in blog_files:
