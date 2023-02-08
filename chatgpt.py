@@ -59,7 +59,8 @@ categories: {category}
 tag: [{tags}]
 toc: false
 author_profile: false
----'''
+---
+'''
     return page_head
 
 prompt_example = f'''Write a long blog articles in markdown format.
@@ -213,7 +214,7 @@ with tab_multiple:
 
             # yesterday = datetime.now() - timedelta(days=1)
             kst_time = datetime.now() + timedelta(hours=9)
-            timestring = kst_time.strftime('%Y-%m-%d_%H-%M-%S"')
+            timestring = kst_time.strftime('%Y-%m-%d_%H-%M-%S')
             zip_filename = f'{timestring}_files.zip'
             with zipfile.ZipFile(zip_filename, 'w') as myzip:
                 for f in blog_files:
