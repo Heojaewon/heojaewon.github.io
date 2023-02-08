@@ -92,11 +92,11 @@ with st.sidebar:
 
 
 
-    value='sk-NpaVrdORtM1GZO79JfhYT3BlbkFJ4MAOiIigemPziliQ5Wp'
+    value=''
     apikey = st.text_input(label='OPENAI API KEY', placeholder='OPENAI API KEY 입력', value=value)
 
-    # if apikey:
-    #     st.markdown(f'OPENAI API KEY: `{apikey}`')
+    if apikey:
+        st.markdown(f'OPENAI API KEY: `{apikey}`')
 
     st.markdown('---')
 
