@@ -103,17 +103,17 @@ with st.sidebar:
 
 # Preset Container
 preset_container = st.container()
-preset_container.subheader('1. 설정')
-tab_single, tab_multiple = preset_container.tabs(['1개 생성', '여러개 생성'])
+preset_container.subheader('1. Setting')
+tab_single, tab_multiple = preset_container.tabs(['create one', 'create multiple'])
 
 col1, co12 =  tab_single.columns(2)
 
-topic = col1.text_input(label='주제 입력', placeholder='주제를 입력해 주세요')
-col1.markdown('(예시)')
+topic = col1.text_input(label='Enter a subject', placeholder='Enter a subject')
+col1.markdown('(e.g.)')
 col1.markdown('`Top 10 Restaurants you must visit when traveling to New York`')
 
-category = co12.text_input(label='카테고리 입력', placeholder='카테고리를 입력해 주세요')
-co12.markdown('(예시)')
+category = co12.text_input(label='Enter a category', placeholder='Please enter a category')
+co12.markdown('(e.g.)')
 co12.markdown('`Travel`')
 
 def generate_blog(apikey, topic, category, prompt):
@@ -147,9 +147,9 @@ with tab_single:
     # Prompt Container
     prompt_container = st.container()
     prompt_container.markdown('''\n''')
-    prompt_container.subheader('2. 작성 글')
-    prompt_container.markdown('[tip 1] [구글 번역기] (https://translate.google.com/)')
-    prompt_container.markdown('[tip 2] `<<topic>>`은 입력한 주제로 `<<category>>`는 입력한 카테고리로 **치환**.')
+    prompt_container.subheader('2. writing')
+    # prompt_container.markdown('[tip 1] [구글 번역기] (https://translate.google.com/)')
+    # prompt_container.markdown('[tip 2] `<<topic>>`은 입력한 주제로 `<<category>>`는 입력한 카테고리로 **치환**.')
     # prompt_container.markdown('(예시)')
     # 예시 필드 prompt_container.markdown(f'''
     # ```
