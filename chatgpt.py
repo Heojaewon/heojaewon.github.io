@@ -186,10 +186,10 @@ with tab_multiple:
 
         # Prompt Container
         prompt_container2 = st.container()
-        prompt_container2.subheader('2. 세부지침')
-        prompt_container2.markdown('[tip 1] **세부지침**은 [구글 번역기](https://translate.google.com/)로 돌려서 **영어로** 입력해 주세요')
-        prompt_container2.markdown('[tip 2] `<<topic>>`은 입력한 주제로 `<<category>>`는 입력한 카테고리로 **치환**됩니다.')
-        prompt_container2.markdown('(예시)')
+        prompt_container2.subheader('2. writing')
+        # prompt_container2.markdown('[tip 1] **세부지침**은 [구글 번역기](https://translate.google.com/)로 돌려서 **영어로** 입력해 주세요')
+        # prompt_container2.markdown('[tip 2] `<<topic>>`은 입력한 주제로 `<<category>>`는 입력한 카테고리로 **치환**됩니다.')
+        # prompt_container2.markdown('(예시)')
         prompt_container2.markdown(f'''
         ```
         {prompt_example}''')
