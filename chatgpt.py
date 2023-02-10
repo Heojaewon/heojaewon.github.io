@@ -155,8 +155,8 @@ with tab_single:
     # ```
     # {prompt_example}''')
 
-    prompt = prompt_container.text_area(label='입력',
-                                        placeholder='입력해 주세요',
+    prompt = prompt_container.text_area(label='input',
+                                        placeholder='Please Input',
                                         key='prompt1',
                                         height=250)
 
@@ -168,17 +168,17 @@ with tab_single:
 
     # 생성
     if apikey and topic and category and prompt:
-        button = prompt_container.button('생성하기')
+        button = prompt_container.button('create')
 
         if button:
             filename = generate_blog(apikey=apikey, topic=topic, category=category, prompt=prompt)
-            download_btn = prompt_container.download_button(label='파일 다운로드', 
+            download_btn = prompt_container.download_button(label='download file',
                                                 data=get_file(filename=filename),
                                                 file_name=filename,
                                                 mime='text/markdown')
 
 with tab_multiple:
-    file_upload = st.file_uploader("파일 선택(csv)", type=['csv'])
+    file_upload = st.file_uploader("Select file (csv)", type=['csv'])
     if file_upload:
         df = pd.read_csv(file_upload)
         df['topic'] = df.apply(lambda x: x['topic'].replace('<<KEYWORD>>', x['keyword']), axis=1)
